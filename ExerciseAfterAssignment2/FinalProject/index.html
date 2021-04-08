@@ -4,75 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T4: Exercise After Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <h4>Table of Contents for CS 321 Web Centric Programming and Web Technologies</h4>
 <ul>
-<li><b><a href=#>Unit 0</a> Organization</b>
+<li class="unit"><b><a href=#>Unit 0</a> Organization</b>
 <button type='button' onclick = "swapDisplay('U0')">+/-</button>
-		<ul id="U0" style='display:none'>
-		<li><a href='CS321_Syllabus.html'>The Syllabus</a></li>
-		<li><a href='CS321_Schedule.xlsx'>The Course Schedule</a></li>
-		<li><a href='All_documentation.docx'>Where to find all the documentation</a> for the various technologies in this course</li>
-		<li><a href='http://web.simmons.edu/~menzin/WebCentricResources.html'> The Web Centric Resources</a></li>
+		<ul id="U0" class="checkFirst" style='display:none'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/CS321_Syllabus.html'  onclick="checkFirst()">The Syllabus</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/CS321_Schedule.xlsx'  onclick="checkFirst()">The Course Schedule</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/All_documentation.docx'  onclick="checkFirst()">Where to find all the documentation</a> for the various technologies in this course</li>
+		<li><a href='http://web.simmons.edu/~menzin/WebCentricResources.html'  onclick="checkFirst()"> The Web Centric Resources</a></li>
 		</ul>	
 </li> 
-<li><b><a href='Unit_1_Basic_HTML5_and_CSS'>Unit 1</a> Basic HTML 5 and CSS</b>
+<li class="unit"><b><a href='Unit_1_Basic_HTML5_and_CSS'>Unit 1</a> Basic HTML 5 and CSS</b>
 <button type='button' onclick = "swapDisplay('U1')">+/-</button>
-		<ul id="U1" style='display:none'>
-		<li><a href='Unit_1_Basic_HTML5_and_CSS/Chapter_0_Basic_HTML/'>Chapter 0: Basic HTML5</a></li>
-		<li><a href='Unit_1_Basic_HTML5_and_CSS/Chapter_1_Basic_CSS/'>Chapter 1: Basic CSS</a></li>
-		<li><a href='Unit_1_Basic_HTML5_and_CSS/Basic_HTML_Tags.docx'>Basic HTML Tags</a></li>
+		<ul id="U1" class="checkFirst" style='display:none'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_1_Basic_HTML5_and_CSS/Chapter_0_Basic_HTML/'  onclick="checkFirst()">Chapter 0: Basic HTML5</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_1_Basic_HTML5_and_CSS/Chapter_1_Basic_CSS/'  onclick="checkFirst()">Chapter 1: Basic CSS</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_1_Basic_HTML5_and_CSS/Basic_HTML_Tags.docx'  onclick="checkFirst()">Basic HTML Tags</a></li>
 		</ul>
 		</li>
-<li><b><a href='Unit_2_JavaScript_and_HTML_Forms'>Unit 2</a> JavaScript and HTML Forms</b>
+<li class="unit"><b><a href='Unit_2_JavaScript_and_HTML_Forms'>Unit 2</a> JavaScript and HTML Forms</b>
 <button type='button' onclick = "swapDisplay('U2')">+/-</button>
-		<ul id="U2" style='display:none'>
-		<li><a href='Unit_2_JavaScript_and_HTML_Forms/Chapter_2_Debugging/'>Chapter 2: Debugging</a></li>
-		<li><a href='Unit_2_JavaScript_and_HTML_Forms/Chapter_3_Basic_Java_Script/'>Chapter 3: Basic JavaScript</a></li>
-		<li><a href='Unit_2_JavaScript_and_HTML_Forms/Chapter_4_Forms_and_Event_Handlers/'>Chapter 4: Forms and Event Handlers</a></li>
-		<li><a href='Unit_2_JavaScript_and_HTML_Forms/Chapter_5_HTML5_Innovations/'>Chapter 5: HTML5 and ES6 Innovations</a></li>
-		<li><a href='Unit_2_JavaScript_and_HTML_Forms/Chapter_6_Page_and_Site_Design_and_Usability/'>Chapter 6: Page and Site Design and Usability</a></li>
+		<ul id="U2" class="checkFirst" style='display:none'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_2_Debugging/'  onclick="checkFirst()">Chapter 2: Debugging</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_3_Basic_Java_Script/'  onclick="checkFirst()">Chapter 3: Basic JavaScript</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_4_Forms_and_Event_Handlers/'  onclick="checkFirst()">Chapter 4: Forms and Event Handlers</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_5_HTML5_Innovations/'  onclick="checkFirst()">Chapter 5: HTML5 and ES6 Innovations</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_2_JavaScript_and_HTML_Forms/Chapter_6_Page_and_Site_Design_and_Usability/'  onclick="checkFirst()">Chapter 6: Page and Site Design and Usability</a></li>
 		</ul>
 </li>
-<li><b><a href='Unit_3_Server_Side_interactions'>Unit 3</a> Server Side Interactions</b>(In 2016 this Unit was replaced by Unit 8)
+<li class="unit"><b><a href='Unit_3_Server_Side_interactions'>Unit 3</a> Server Side Interactions</b>(In 2016 this Unit was replaced by Unit 8)
 <button type='button' onclick = "swapDisplay('U3')">+/-</button>
-        <ul  id="U3" style='display:none'><li><a href='Unit_3_Server_Side_interactions/Chapter_7_Basic_Linux_Perl_and_Client_Server_Interaction/'>Chapter 7: Basic Linux Perl and Server Side Interactions</a></li>
+        <ul  id="U3" class="checkFirst" style='display:none'>
+            <li><a href='http://web.simmons.edu/~menzin/CS321/Unit_3_Server_Side_interactions/Chapter_7_Basic_Linux_Perl_and_Client_Server_Interaction/'  onclick="checkFirst()">Chapter 7: Basic Linux Perl and Server Side Interactions</a></li>
 		</ul> 
 </li>		
-<li><b><a href='Unit_4_XML'>Unit 4</a> XML</b>
+<li class="unit"><b><a href='Unit_4_XML'>Unit 4</a> XML</b>
 <button type='button' onclick = "swapDisplay('U4')">+/-</button>
-        <ul id="U4" style='display:none'>
-		<li><a href='Unit_4_XML/'>Chapter 8: XML</a></li></ul>
+        <ul id="U4" class="checkFirst" style='display:none'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_4_XML/'  onclick="checkFirst()">Chapter 8: XML</a></li></ul>
 </li>
-<li><b><a href='Unit_5_jQuery_and_Ajax'>Unit 5</a> Advanced JavaScript, jQuery and Ajax</b> with the jQuery book
+<li class="unit"><b><a href='Unit_5_jQuery_and_Ajax'>Unit 5</a> Advanced JavaScript, jQuery and Ajax</b> with the jQuery book
 <button type='button' onclick = "swapDisplay('U5')">+/-</button>
-		<ul  id="U5" style='display:block'>
-		<li><a href='Unit_5_jQuery_and_Ajax/Chapter_9_AdvancedJavaScriptAndBasicAJAX/'>Chapter 9: Advanced JavaScript and Basic AJAX</a></li>
-		<li><a href='Unit_5_jQuery_and_Ajax/Chapter_10_Beginning_%20jQuery/'>Chapter 10: Beginning jQuery</a></li>
-		<li><a href='Unit_5_jQuery_and_Ajax/Chapter_11_AJAX_in_jQueryAndMoreFun/'>Chapter 11: AJAX in jQuery and More Fun</a></li>
+		<ul  id="U5" class="checkFirst" style='display:block'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_5_jQuery_and_Ajax/Chapter_9_AdvancedJavaScriptAndBasicAJAX/'  onclick="checkFirst()">Chapter 9: Advanced JavaScript and Basic AJAX</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_5_jQuery_and_Ajax/Chapter_10_Beginning_%20jQuery/'  onclick="checkFirst()">Chapter 10: Beginning jQuery</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_5_jQuery_and_Ajax/Chapter_11_AJAX_in_jQueryAndMoreFun/'  onclick="checkFirst()">Chapter 11: AJAX in jQuery and More Fun</a></li>
 		</ul>
 </li>
-<li><b><a href='Unit_6_Web_Services_and_other_follow_ons'>Unit 6</a> Web Services, RSS etc.</b> optional independently 
+<li class="unit"><b><a href='Unit_6_Web_Services_and_other_follow_ons'>Unit 6</a> Web Services, RSS etc.</b> optional independently 
 <button type='button' onclick = "swapDisplay('U6')">+/-</button>
-		<ul id="U6" style='display:none'>
-		<li><a href='Unit_6_Web_Services_and_other_follow_ons/Web_Services.docx'>Chapter 12: Web Services</a></li></ul>
+		<ul id="U6" class="checkFirst" style='display:none'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_6_Web_Services_and_other_follow_ons/Web_Services.docx'  onclick="checkFirst()">Chapter 12: Web Services</a></li></ul>
 </li>
-<li><b><a href='Unit_7_Mobile'>Unit 7</a> Responsive Web Design and Going Mobile</b>
+<li class="unit"><b><a href='Unit_7_Mobile'>Unit 7</a> Responsive Web Design and Going Mobile</b>
 <button type='button' onclick = "swapDisplay('U7')">+/-</button>
-		<ul id="U7" style='display:block'>
-		<li><a href='Unit_7_Mobile/Chapter_13_ResponsiveWebDesign/'>Chapter 13: Responsive Web Design and CSS Grid</a></li>
-		<li><a href='Unit_7_Mobile/Chapter_14_GoingMobile/'>Chapter 14: Going Mobile</a></li>
-		<li><a href='Unit_7_Mobile/Chapter_15_BigProject/'>Chapter 15: The Big Project</a></li>
+		<ul id="U7" class="checkFirst" style='display:block'>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_7_Mobile/Chapter_13_ResponsiveWebDesign/' onclick="checkFirst()">Chapter 13: Responsive Web Design and CSS Grid</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_7_Mobile/Chapter_14_GoingMobile/'  onclick="checkFirst()">Chapter 14: Going Mobile</a></li>
+		<li><a href='http://web.simmons.edu/~menzin/CS321/Unit_7_Mobile/Chapter_15_BigProject/'  onclick="checkFirst()">Chapter 15: The Big Project</a></li>
 		</ul>
 </li>
-<li><b><a href='Unit_8_Server_Side_Node'>Unit 8 </a> ES6/ESNext, and Server Side Interaction with Node.js</b>
+<li class="unit"><b><a href='Unit_8_Server_Side_Node'>Unit 8 </a> ES6/ESNext, and Server Side Interaction with Node.js</b>
 <button type='button' onclick = "swapDisplay('U8')">+/-</button>
-         <ul  id="U8" style='display:block'><li><a href='Unit_8_Server_Side_Node/'>Chapter 16: Node.js</a></li></ul>
+         <ul  id="U8" class="checkFirst" style='display:block'>
+            <li><a href='http://web.simmons.edu/~menzin/CS321/Unit_8_Server_Side_Node/'>Chapter 16: Node.js</a></li></ul>
 </li>
-<li><b><a href='Unit_9_Advanced/'>Unit 9 </a> Some favorite advanced references</b></li>
+<li class="unit"><b><a href='Unit_9_Advanced/'>Unit 9 </a> Some favorite advanced references</b></li>
 
 </ul>
+
+<button id="displayToggle">Display Toggle</button>
 
     <script src="index.js"></script>
 </body>
