@@ -31,6 +31,10 @@ function checkFirst () {
 };
 
 // Collapse all and Display all but in one toggle button
+$(document).ready( () => {
 $('#displayToggle').delegate(".unit", "click", () => {
-  $('li').children('ul').toggle( display );
-})
+  $('unit').toggle( display );
+
+// https://api.jquery.com/toggle/#toggle-display
+});
+});

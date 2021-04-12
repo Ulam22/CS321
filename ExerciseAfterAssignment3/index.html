@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+	<title>ExerciseA3_P1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<style type="text/css">
+	    h2, body{
+	font-family:arial, sans-serif;
+}
+body {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+	</style>
+</head>
+
+<body>
+<h2>Welcome to CS 321 Web Centric Programming and Web Technologies</h2>
+<h3>Team 4: onload exercise</h3> 
+<ul>
+<li>Read the <a href='CS321_Syllabus.html'>Syllabus</a>. </li>
+<li>Examine the <a href='CS321_Schedule.xlsx'>Schedule</a>. </li>
+<li>Dig into the <a href='CS321_TOC.html'>Table of Contents</a> for the course.</li>
+<li>Use the <a href='http://web.simmons.edu/~menzin/WebCentricResources.html'>Web Centric Resources</a>.</li>
+</ul>
+<ul id="humor">
+
+
+</ul>
+
+<script>
+   $('#humor').load("humorContent.html", () => {
+       alert("The Humor List has popped up")
+   });
+
+</script>
+</body>
+</html>
