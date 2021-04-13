@@ -4,14 +4,56 @@
     <meta charset="utf-8" >
 	<title>ExerciseA3_P1</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     	<style type="text/css">
 	    h2, body{
 	font-family:arial, sans-serif;
+}
+.Extra {
+    color:gray;
+    opacity: .2;
 }
 body {
     font-size: 1.2rem;
     line-height: 2rem;
 }
+    #humorExtra {
+        max-width: 70vw;
+        margin: auto;
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        width:70vw;
+        padding: .9rem .3rem;
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin: .9rem 0;
+    }
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    
 	</style>
 </head>
 
@@ -24,16 +66,11 @@ body {
 <li>Dig into the <a href='CS321_TOC.html'>Table of Contents</a> for the course.</li>
 <li>Use the <a href='http://web.simmons.edu/~menzin/WebCentricResources.html'>Web Centric Resources</a>.</li>
 </ul>
-<ul id="humor">
+<div id="humor"></div>
+<div id="links"></div>
 
-
-</ul>
-
-<script>
-   $('#humor').load("humorContent.html", () => {
-       alert("The Humor List has popped up")
-   });
-
-</script>
+<!-- Personal side project -->
+<div id="humorExtra"></div>
+<script src="/index.js"></script>
 </body>
 </html>

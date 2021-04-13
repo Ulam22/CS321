@@ -1,13 +1,19 @@
 
- <div id="Songs">
+<br><br>
+    <div class="Extra">
+
+      <h4> Extra -- Not Part of original assignment</h4>
+ <button type="button" class="toggle-btn">Songs</button>
+ <div class="content">
      <ul>
          <li><a href="http://web.simmons.edu/~menzin/sigcse_song/20180224_093619.mp4">I want an A Project</a></li>
      <li><a href="https://www.youtube.com/watch?v=1f7OwFqTnco">Teaching in the Pandemic</a></li>
      <li><a href="https://www.youtube.com/watch?v=W6OaYPVueW4">Tom Lehrer song : New Math</a></li>
      </ul>
  </div>
- 
- <div id="Cartoons">
+
+ <button type="button" class="toggle-btn">Cartoons</button>
+ <div class="content">
      <ul>
          <li><a href="https://www.cartoonstock.com/directory/i/information_technology.asp">IT cartoons</a></li>
      <li><a href="https://xkcd.com/">XKCD cartoons</a></li>
@@ -16,12 +22,31 @@
      </ul>
  </div>
  
- <div id="Jokes">
+ <button type="button" class="toggle-btn">Jokes</button>
+ <div class="content">
      <ul>
          <li><a href="https://www.careersolvers.com/interviews/job-posting-translation-guide/">Job postings</a></li>
      <li><a href="https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered">Teaching in the Pandemic</a></li>
      <li><a href="https://www.youtube.com/watch?v=W6OaYPVueW4">Funny code comments</a></li>
      </ul>
  </div>
+    </div>
  
  
+ <script>
+     var coll = document.getElementsByClassName("toggle-btn");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+
+ </script>
