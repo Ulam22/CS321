@@ -6,7 +6,7 @@ html {
 body {
   overflow-x: hidden;
   font-size: 1rem;
-  font-family:'calibri', tahoma, verdana sans-serif;
+  font-family: "calibri", tahoma, verdana sans-serif;
 }
 main {
   margin: auto;
@@ -17,8 +17,8 @@ main {
   grid-gap: 10px;
 }
 .cell {
-    border: 1px solid #886355;
-    padding:1rem;
+  border: 1px solid #886355;
+  padding: 1rem;
 }
 header {
   /*z-index: 1;
@@ -28,18 +28,46 @@ header {
 }
 
 ion-icon {
-transform: scale(2);       
+  transform: scale(2);
+}
+
+.responsive-checker {
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+#desktop {
+  color: rgb(81, 112, 81);
+}
+#tablet {
+  display: none;
+}
+#mobile {
+  display: none;
 }
 
 @media (max-width: 450px) {
   .wrapper {
-   grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  #desktop {
+    display: none;
+  }
+  #mobile {
+    display: unset;
+    color: rgb(182, 106, 189);
   }
 }
 
-@media (min-width: 460px) and (max-width: 800px){
-    .wrapper {
-        grid-template-columns: 1fr 1fr;
-        
-    }
+@media (min-width: 460px) and (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  #tablet {
+    display: unset;
+    color: rgb(31, 101, 233);
+  }
+  #desktop {
+    display: none;
+  }
 }
