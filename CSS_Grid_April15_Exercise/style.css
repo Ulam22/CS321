@@ -5,7 +5,8 @@ html {
 }
 body {
   overflow-x: hidden;
-  
+  font-size: 1rem;
+  font-family:'calibri', tahoma, verdana sans-serif;
 }
 main {
   margin: auto;
@@ -34,4 +35,11 @@ transform: scale(2);
   .wrapper {
    grid-template-columns: 1fr;
   }
+}
+
+@media (min-width: 460px) and (max-width: 800px){
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        
+    }
 }
